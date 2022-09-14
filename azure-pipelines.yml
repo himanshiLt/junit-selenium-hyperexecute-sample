@@ -7,5 +7,5 @@ pool:
 steps:
 - script: |
     chmod u+x hyperexecute
-    ./hyperexecute --user $(LT_USERNAME) --key $(LT_ACCESS_KEY) --config yaml/win/junit_hyperexecute_autosplit_sample.yaml --env stage
+    ./hyperexecute --user $(LT_USERNAME) --key $(LT_ACCESS_KEY) --config yaml/win/junit_hyperexecute_autosplit_sample.yaml --env stage --verbose
   displayName: 'run HE test'
