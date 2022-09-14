@@ -2,11 +2,10 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
 - script: |
-    wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
     chmod u+x hyperexecute
-    ./hyperexecute --user $(LT_USERNAME) --key $(LT_ACCESS_KEY) --config yaml/win/junit_hyperexecute_autosplit_sample.yaml --env stage --verbose
+    ./hyperexecute.exe --user $(LT_USERNAME) --key $(LT_ACCESS_KEY) --config yaml/win/junit_hyperexecute_autosplit_sample.yaml --env stage --verbose
   displayName: 'run HE test'
