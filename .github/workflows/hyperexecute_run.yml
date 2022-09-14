@@ -3,7 +3,7 @@ on: push
 jobs:
   golangci:
     name: hyperexecute grid testing
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       # checkout the repo
       - name: 'Checkout GitHub Action'
