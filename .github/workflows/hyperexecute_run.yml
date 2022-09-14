@@ -5,7 +5,6 @@ jobs:
     name: hyperexecute grid testing
     runs-on: windows-latest
     steps:
-      # checkout the repo
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@main
 
