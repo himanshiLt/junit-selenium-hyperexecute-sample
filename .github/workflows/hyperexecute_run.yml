@@ -8,9 +8,6 @@ jobs:
       # checkout the repo
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@main
-        
-      - name: 'download binary'
-        run: wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
 
       - name: 'provide access to file'
         run: chmod u+x hyperexecute
